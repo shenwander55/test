@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>傳藝處方箋 - 文化療癒的創新之旅</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        header {
+            background: #50a3a2;
+            color: white;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header h1 {
+            text-align: center;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .map-container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 20px auto;
+            text-align: center;
+        }
+        .map-container img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .checkbox-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .checkbox-list li {
+            margin-bottom: 10px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 縱橫比 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .header-banner {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .banner-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .banner-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        .banner-text h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .banner-text p {
+            font-size: 1.2em;
+        }
+        @media (max-width: 768px) {
+            .header-banner {
+                height: 300px;
+            }
+            .banner-text h2 {
+                font-size: 2em;
+            }
+            .banner-text p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>傳藝處方箋 - 文化療癒的創新之旅</h1>
+        </div>
+    </header>
+
+    <div class="header-banner">
+        <img src="yilan-cultural-center-panorama.jpg" alt="宜蘭傳藝園區全景" class="banner-image">
+        <div class="banner-text">
+            <h2>探索傳統 • 療癒身心</h2>
+            <p>在宜蘭傳藝園區，感受文化的力量</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <h2>什麼是傳藝處方箋？</h2>
+            <p>傳藝處方箋是社會處方箋的一種，將有需求者轉介至傳藝園區。透過廟宇文化、民藝街區、表演藝術、街頭裝置、與自然環境等多元搭配，為日常注入更多美好而療癒的能量。</p>
+            
+            <h2>特點</h2>
+            <ul>
+                <li>文化浸潤：透過傳統藝術文化提供非藥物治療</li>
+                <li>全人關懷：關注身心社會各方面健康</li>
+                <li>跨齡適用：適合1到99歲的不同多元需求</li>
+            </ul>
+
+            <h2>適應症</h2>
+            <ul class="checkbox-list">
+                <li><label><input type="checkbox"> 65歲以上高齡者：增加社交互動機會</label></li>
+                <li><label><input type="checkbox"> 祖孫共學需求者：通過共同體驗傳統藝術，增進世代理解和感情</label></li>
+                <li><label><input type="checkbox"> 認知障礙和輕度認知衰退者：提供感官刺激，延緩認知衰退</label></li>
+                <li><label><input type="checkbox"> 心理健康問題者：如抑鬱、焦慮，透過藝術活動舒緩情緒、放鬆身心</label></li>
+                <li><label><input type="checkbox"> 具有保存文化與傳統技藝的興趣者：為日常注入更多美好而療癒的能量</label></li>
+            </ul>
+
+            <h2>如何使用傳藝處方箋</h2>
+            <ol>
+                <li>醫療人員評估患者需求</li>
+                <li>開立HIS傳藝處方箋、給予處方箋兌換券</li>
+                <li>患者及家屬攜帶處方箋、身分證件至宜蘭傳藝園區參觀、手作體驗</li>
+                <li>兌換內容三選一：
+                    <ul class="checkbox-list">
+                        <li><label><input type="radio" name="redemption"> 2張入園門票</label></li>
+                        <li><label><input type="radio" name="redemption"> 2張手作體驗券</label></li>
+                        <li><label><input type="radio" name="redemption"> 1張入園門票+1張體驗券</label></li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h3>說明：</h3>
+            <ul>
+                <li>手作體驗券可至園區內店家兌換手作活動，深度體驗傳統工藝之美!</li>
+                <li>具有身障身分：入園免費，兌換手作體驗券最划算!</li>
+                <li>具有敬老身分：推薦兌換2張入園門票</li>
+                <li>無以上兩種身分：推薦兌換2張門票。或門票自費，兌換手作體驗券，同享手工之樂!</li>
+            </ul>
+
+            <h2>園區特色</h2>
+            <ul>
+                <li>「三館三街三建築」架構</li>
+                <li>歷史傳承之粹、漫遊巷弄古味之趣</li>
+                <li>多元體驗：廟宇文化、民藝街區、表演藝術、街頭裝置</li>
+                <li>自然環境：融合傳統建築與山水景觀</li>
+                <li>友善環境：適合不同年齡層共同參與的活動和空間</li>
+            </ul>
+
+            <h2>園區地圖</h2>
+            <div class="map-container">
+                <img src="https://i.postimg.cc/Y2XMBPth/O-MAP.jpg" alt="園區地圖" onerror="this.onerror=null;this.src='https://via.placeholder.com/800x600?text=圖片加載失敗';this.style.border='2px solid red';">
+            </div>
+            
+            <h2>推薦路線</h2>
+            <ul>
+                <li>祈福時光：1 → 2 → 3 → 6 → 4 → 5 → 8 → 12 → 13</li>
+                <li>手感時光：1 → 2 → 3 → 6 → 4 → 5 → 10 → 8 → 12 → 13</li>
+                <li>樂活漫步：1 → 2 → 3 → 9 → 6 → 4 → 8 → 10 → 11 → 7 → 6 → 12 → 13</li>
+            </ul>
+
+            <h2>如何到達宜蘭傳藝園區</h2>
+            <h3>一、自行開車</h3>
+            <p>於羅東（五結）交流道下，前行至傳藝路，由迴轉道左轉傳藝路，經傳藝大橋至北邊停車場（右二省道158公里處），左轉後即可抵達。</p>
+            <h3>二、大眾交通運輸工具</h3>
+            <ul>
+                <li>火車：至羅東火車站下車，於後站搭乘綠21公車。</li>
+                <li>客運：搭乘首都客運/國光客運/葛瑪蘭客運/大都會客運，至羅東轉運站下車，轉乘綠21公車。</li>
+            </ul>
+
+            <h2>影音介紹</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vsQDShacT5M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var img = document.querySelector('.map-container img');
+            img.onload = function() {
+                console.log('地圖圖片成功加載');
+            };
+            img.onerror = function() {
+                console.error('地圖圖片加載失敗');
+            };
+        });
+    </script>
+</body>
+</html>
