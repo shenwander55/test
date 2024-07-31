@@ -68,45 +68,50 @@
             width: 100%;
             height: 100%;
         }
+           .header-banner {
+        position: relative;
+        width: 100%;
+        height: 300px; /* 減小高度以提高清晰度 */
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+    .banner-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center; /* 確保圖片居中顯示 */
+    }
+    .banner-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .banner-text h2 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+    .banner-text p {
+        font-size: 1.2em;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+    }
+    @media (max-width: 768px) {
         .header-banner {
-            position: relative;
-            width: 100%;
-            height: 400px;
-            overflow: hidden;
-            margin-bottom: 20px;
-        }
-        .banner-image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .banner-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            height: 200px; /* 在小屏幕上進一步減小高度 */
         }
         .banner-text h2 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
+            font-size: 2em;
         }
         .banner-text p {
-            font-size: 1.2em;
+            font-size: 1em;
         }
-        @media (max-width: 768px) {
-            .header-banner {
-                height: 300px;
-            }
-            .banner-text h2 {
-                font-size: 2em;
-            }
-            .banner-text p {
-                font-size: 1em;
-            }
-        }
+    }
     </style>
 </head>
 <body>
@@ -117,12 +122,12 @@
     </header>
 
     <div class="header-banner">
-        <img src="yilan-cultural-center-panorama.jpg" alt="宜蘭傳藝園區全景" class="banner-image">
-        <div class="banner-text">
-            <h2>探索傳統 • 療癒身心</h2>
-            <p>在宜蘭傳藝園區，感受文化的力量</p>
-        </div>
+    <img src="yilan-cultural-center-panorama.jpg" alt="宜蘭傳藝園區全景" class="banner-image">
+    <div class="banner-text">
+        <h2>探索傳統 • 療癒身心</h2>
+        <p>在宜蘭傳藝園區，感受文化的力量</p>
     </div>
+</div>
 
     <div class="container">
         <div class="content">
