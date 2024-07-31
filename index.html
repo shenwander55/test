@@ -13,105 +13,86 @@
             background-color: #f4f4f4;
             color: #333;
         }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px;
-        }
-        header {
-            background: #50a3a2;
-            color: white;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #e8491d 3px solid;
-        }
-        header h1 {
-            text-align: center;
-        }
-        .content {
-            background: white;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 5px;
-        }
-        .map-container {
-            width: 100%;
-            max-width: 1000px;
-            margin: 20px auto;
-            text-align: center;
-        }
-        .map-container img {
-            max-width: 100%;
-            height: auto;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-        .checkbox-list {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        .checkbox-list li {
-            margin-bottom: 10px;
-        }
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 縱橫比 */
-            height: 0;
-            overflow: hidden;
-            max-width: 100%;
-        }
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-           .header-banner {
-        position: relative;
-        width: 100%;
-        height: 300px; /* 減小高度以提高清晰度 */
-        overflow: hidden;
-        margin-bottom: 20px;
-    }
-    .banner-image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center; /* 確保圖片居中顯示 */
-    }
+      .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+header {
+    background: #50a3a2;
+    color: white;
+    padding: 30px 0; /* 修改：使用上下内边距 */
+    border-bottom: #e8491d 3px solid;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5em; /* 新增：增大字体大小 */
+    margin: 0; /* 新增：移除默认边距 */
+}
+
+.content {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* 新增：横幅相关样式 */
+.header-banner {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 400px;
+}
+
+.banner-text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.banner-text h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.banner-text p {
+    font-size: 1em;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
+@media (max-width: 768px) {
     .banner-text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        color: white;
-        background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
-        padding: 20px;
-        border-radius: 10px;
+        width: 90%;
+        padding: 10px;
     }
     .banner-text h2 {
-        font-size: 2.5em;
-        margin-bottom: 10px;
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        font-size: 1.5em;
     }
     .banner-text p {
-        font-size: 1.2em;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+        font-size: 0.9em;
     }
-    @media (max-width: 768px) {
-        .header-banner {
-            height: 200px; /* 在小屏幕上進一步減小高度 */
-        }
-        .banner-text h2 {
-            font-size: 2em;
-        }
-        .banner-text p {
-            font-size: 1em;
-        }
-    }
+}
     </style>
 </head>
 <body>
@@ -121,7 +102,7 @@
         </div>
     </header>
 
-    <div class="header-banner">
+  <div class="header-banner">
     <img src="yilan-cultural-center-panorama.jpg" alt="宜蘭傳藝園區全景" class="banner-image">
     <div class="banner-text">
         <h2>探索傳統 • 療癒身心</h2>
